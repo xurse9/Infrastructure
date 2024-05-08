@@ -1,0 +1,14 @@
+services:
+  jenkins:
+    image: panda_jenkins
+    container_name: jenkins
+    restart: always
+    ports:
+      - 8880:8080
+      - 50000:50000
+  sonarqube:
+    image: sonarqube:10.2.1-community
+    container_name: sonarqube
+    restart: always
+    ports:
+      - 9000:9000
