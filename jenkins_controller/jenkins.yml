@@ -2,12 +2,34 @@ jenkins:
   securityRealm:
     local:
       users:
-        - id: "panda"
-          password: "panda"
+       - id: "panda"
+         password: "panda"
   authorizationStrategy:
     globalMatrix:
       permissions:
         - "Overall/Administer:panda"
+
+tool:
+  sonarRunnerInstallation:
+    installations:
+    - name: "SonarQube"
+      properties:
+      - installSource:
+          installers:
+          - sonarRunnerInstaller:
+              id: "5.0.1.3006"
+
 unclassified:
-  location: 
+  location:
     url: "http://10.1.9.80:8880/"
+  sonarGlobalConfiguration:
+    buildWrapperEnabled: true
+    installations:
+    - name: "SonarQube"
+      serverUrl: "http://10.1.9.80:9000"
+      triggers:
+        skipScmCause: false
+        skipUpstreamCause: false
+  locale:
+    ignoreAcceptLanguage: true
+    systemLocale: "en"
