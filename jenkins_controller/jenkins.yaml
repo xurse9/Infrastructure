@@ -21,12 +21,12 @@ tool:
 
 unclassified:
   location:
-    url: "http://10.1.9.80:8880/"
+    url: "http://127.0.0.1:8880/"
   sonarGlobalConfiguration:
     buildWrapperEnabled: true
     installations:
     - name: "SonarQube"
-      serverUrl: "http://10.1.9.80:9000"
+      serverUrl: "http://sonarqube:9000"
       triggers:
         skipScmCause: false
         skipUpstreamCause: false
