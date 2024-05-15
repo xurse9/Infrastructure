@@ -15,3 +15,11 @@ services:
     ports:
       - "9000:9000"
     restart: always
+  artifactory:
+    image: docker.bintray.io/jfrog/artifactory-jcr:7.39.4
+    container_name: artifactory
+    ports:
+      - "8081:8081"
+      - "8082:8082"
+    volumes:
+      - ./artifactory:/artifactory_extra_conf
