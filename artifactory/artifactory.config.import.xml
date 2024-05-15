@@ -4,11 +4,11 @@
     <archiveIndexEnabled>false</archiveIndexEnabled>
     <helpLinksEnabled>true</helpLinksEnabled>
     <fileUploadMaxSizeMb>100</fileUploadMaxSizeMb>
-    <revision>6</revision>
+    <revision>3</revision>
     <dateFormat>dd-MM-yy HH:mm:ss z</dateFormat>
     <addons>
         <showAddonsInfo>true</showAddonsInfo>
-        <showAddonsInfoCookie>1715788811107</showAddonsInfoCookie>
+        <showAddonsInfoCookie>1715800111115</showAddonsInfoCookie>
     </addons>
     <security>
         <anonAccessEnabled>false</anonAccessEnabled>
@@ -173,18 +173,6 @@
             <synchronizeProperties>false</synchronizeProperties>
             <listRemoteFolderItems>false</listRemoteFolderItems>
             <rejectInvalidJars>false</rejectInvalidJars>
-            <contentSynchronisation>
-                <enabled>false</enabled>
-                <statistics>
-                    <enabled>false</enabled>
-                </statistics>
-                <properties>
-                    <enabled>false</enabled>
-                </properties>
-                <source>
-                    <originAbsenceDetection>false</originAbsenceDetection>
-                </source>
-            </contentSynchronisation>
             <blockMismatchingMimeTypes>true</blockMismatchingMimeTypes>
             <mismatchingMimeTypesOverrideList></mismatchingMimeTypesOverrideList>
             <bypassHeadRequests>false</bypassHeadRequests>
@@ -426,7 +414,7 @@
     </downloadRedirectConfig>
     <eula>
         <accepted>true</accepted>
-        <acceptDate>2024-05-15T16:02:31.028Z</acceptDate>
+        <acceptDate>2024-05-15T19:09:49.454Z</acceptDate>
     </eula>
     <subscription>
         <emails/>
