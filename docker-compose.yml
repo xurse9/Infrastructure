@@ -23,3 +23,4 @@ services:
       - "8082:8082"
     volumes:
       - ./artifactory:/artifactory_extra_conf
+    restart: always
