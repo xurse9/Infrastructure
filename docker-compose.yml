@@ -1,9 +1,9 @@
 # version: "2.4"
 services:
   jenkins:
-    depends_on:
-      artifactory:
-        condition: service_healthy
+    # depends_on:
+    #   artifactory:
+    #     condition: service_healthy
     build: jenkins_controller
     container_name: jenkins
     ports:
@@ -33,18 +33,18 @@ services:
       - "9000:9000"
     restart: always
 
-  artifactory:
-    image: docker.bintray.io/jfrog/artifactory-jcr:7.39.4
-    container_name: artifactory
-    ports:
-      - "8081:8081"
-      - "8082:8082"
-    volumes:
-      - ./artifactory:/artifactory_extra_conf
-    restart: always
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8082/artifactory/api/system/ping"]
-      interval: 10s
-      timeout: 10s
-      retries: 30
-      start_period: 180s
+  # artifactory:
+  #   image: docker.bintray.io/jfrog/artifactory-jcr:7.39.4
+  #   container_name: artifactory
+  #   ports:
+  #     - "8081:8081"
+  #     - "8082:8082"
+  #   volumes:
+  #     - ./artifactory:/artifactory_extra_conf
+  #   restart: always
+  #   healthcheck:
+  #     test: ["CMD", "curl", "-f", "http://localhost:8082/artifactory/api/system/ping"]
+  #     interval: 10s
+  #     timeout: 10s
+  #     retries: 30
+  #     start_period: 180s
