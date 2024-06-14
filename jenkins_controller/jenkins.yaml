@@ -83,7 +83,7 @@ tool:
 
 unclassified:
   location:
-    url: "http://127.0.0.1:8880/"
+    url: "http://192.148.44.44:8880/"
   sonarGlobalConfiguration:
     buildWrapperEnabled: true
     installations:
