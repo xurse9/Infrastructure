@@ -82,12 +82,12 @@ tool:
               id: "5.0.1.3006"
   terraform:
     installations:
-      - name: "Terraform"
-        properties:
-        - installSource:
+    - name: "Terraform"
+      properties:
+      - installSource:
           installers:
           - terraformInstaller:
-            id: "40619-linux-amd64"
+              id: "40619-linux-amd64"
 
 unclassified:
   location:
