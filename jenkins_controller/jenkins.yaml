@@ -87,7 +87,7 @@ tool:
         - installSource:
           installers:
           - terraformInstaller:
-            id: "20413-linux-amd64"
+            id: "40619-linux-amd64"
 
 unclassified:
   location:
